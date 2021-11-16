@@ -140,8 +140,8 @@ body {
 }
 
 :root {
-    --clr-background: #272727;
-    --clr-forward: rgb(94, 94, 94);
+    --clr-background: #1b1c21;
+    --clr-forward: rgb(88, 86, 99);
 
     --clr-text: #fff;
 }
@@ -165,6 +165,8 @@ body {
     border-radius: 6px;
 
     overflow: hidden;
+
+    box-shadow: 0 0 8px 0 #666;
 
     background-color: var(--clr-forward);
 
