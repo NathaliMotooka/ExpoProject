@@ -4,9 +4,9 @@
   "description": "PetShop",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html"
-    },
+    "dev": "parcel src/index.php",
+    "build": "parcel build src/index.php"
+  },
   "author": "Nathali Motooka",
   "license": "ISC",
   "devDependencies": {
