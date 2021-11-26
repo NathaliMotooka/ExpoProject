@@ -1,0 +1,119 @@
+.products {
+	&__header {
+		display: flex;
+		align-items: center;
+
+		padding-inline: clamp(2em, 6vw, 8em);
+
+		background-color: var(--clr-forward);
+
+		.title {
+			margin-right: auto;
+
+			padding: 1.5em 0;
+		}
+
+		.nav {
+			ul {
+				display: flex;
+				align-items: center;
+				justify-content: flex-end;
+				flex-wrap: wrap;
+				gap: 0.5em;
+			}
+
+			li {
+				display: inherit;
+			}
+
+			a {
+				padding: 1em;
+				font-size: 1.75em;
+				font-weight: 600;
+
+				color: var(--clr-text);
+				text-decoration: none;
+
+				&:hover {
+					color: var(--clr-text-hover);
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+
+	&__main {
+		margin: 4em;
+
+		.list {
+			display: flex;
+			justify-content: center;
+			gap: clamp(1em, 5vw, 7em);
+			flex-wrap: wrap;
+
+			&__content {
+				position: relative;
+
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+
+				border: 1px solid var(--clr-text);
+				border-radius: 8px;
+				padding: 2em;
+
+				width: 13em;
+
+				text-align: center;
+
+				cursor: pointer;
+
+				transition-duration: 200ms;
+				transition-timing-function: ease-in-out;
+				transition-property: transform color border-color;
+
+				&:hover {
+					transform: scale(1.1) scaleZ(1);
+					border-color: var(--clr-text-hover);
+					color: var(--clr-text-hover);
+
+					img {
+						opacity: 0.8;
+					}
+				}
+
+				img {
+					transition-duration: 150ms;
+					transition-timing-function: ease-in-out;
+					transition-property: opacity;
+				}
+
+				.title {
+					font-size: 1.35em;
+					font-weight: 500;
+				}
+
+				b {
+					margin-top: 1.5em;
+					font-weight: 600;
+				}
+			}
+		}
+	}
+
+	&__footer {
+		display: grid;
+		justify-content: center;
+		gap: 1em;
+
+		padding: 1rem;
+
+		background-image: url(../../public/imagens/bg-white.jpg);
+		color: var(--clr-background);
+
+		img {
+			margin: auto;
+		}
+	}
+}
